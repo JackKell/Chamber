@@ -49,6 +49,10 @@ public class PlayerController : MonoBehaviour
 		amountToMove.y -= gravity * Time.deltaTime;
 		playerPhysics.Move(amountToMove * Time.deltaTime);
 	}
+
+	void OnCollisionEnter(Collision collision) {
+		Debug.Log("I collided!");
+	}
 	
 	private float IncrementTowards(float currentSpeed, float targetSpeed, float acceleration)
 	{

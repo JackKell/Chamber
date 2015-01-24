@@ -23,7 +23,7 @@ public class PlayerPhysics : MonoBehaviour {
 		size = collider.size;
 		center = collider.center;
 	}
-	
+
 	public void Move(Vector2 moveAmount)
 	{
 		float deltaY = moveAmount.y;
@@ -63,7 +63,7 @@ public class PlayerPhysics : MonoBehaviour {
 		for (int i = 0; i < 3; i++)
 		{
 			float direction = Mathf.Sign(deltaX);
-			Debug.Log("LR Direction: " + direction);
+			//Debug.Log("LR Direction: " + direction);
 			float y = (position.y + center.y - size.y/2) + size.y/2 * i;
 			float x = position.x + center.x + size.y/2 * direction;
 			
@@ -72,7 +72,7 @@ public class PlayerPhysics : MonoBehaviour {
 			
 			if (Physics.Raycast(ray,out hit,Mathf.Abs(deltaX) + skin,collisionMask))
 			{
-				Debug.Log("Fire");
+				//Debug.Log("Fire");
 				float distance = Vector3.Distance(ray.origin, hit.point);
 				
 				if (distance > skin)
