@@ -4,7 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(PlayerPhysics))]
 public class PlayerController : MonoBehaviour 
 {
-	public int playerNumber;
+	public int playerNumber = 1;
 
 	public float gravity = 20;
 	public float speed = 8;
@@ -32,14 +32,14 @@ public class PlayerController : MonoBehaviour
 			currentSpeed = 0;
 		}
 		
-		targetSpeed = Input.GetAxisRaw("Horizontal") * speed;
+		targetSpeed = Input.GetAxisRaw("Horizontal_P" + playerNumber) * speed;
 		currentSpeed = IncrementTowards(currentSpeed, targetSpeed, acceleration);
 		
 		if (playerPhysics.grounded)
 		{
 			amountToMove.y = 0;
 			
-			if (Input.GetButtonDown("Jump"))
+			if (Input.GetButtonDown("Jump_P" + playerNumber))
 			{
 				amountToMove.y = jumpHeight;
 			}
