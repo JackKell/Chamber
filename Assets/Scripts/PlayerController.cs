@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent(typeof(PlayerPhysics))]
 public class PlayerController : MonoBehaviour 
 {
+	public int playerNumber;
+
 	public float gravity = 20;
 	public float speed = 8;
 	public float acceleration = 30;
