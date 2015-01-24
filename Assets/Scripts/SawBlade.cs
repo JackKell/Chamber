@@ -13,11 +13,12 @@ public class SawBlade : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime, Space.World);
+		transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime, Space.Self);
 		transform.Translate (new Vector2(xSpeed * Time.deltaTime, 0), Space.World);
 	}
 
 	void OnTriggerEnter(Collider collider) {
+		Debug.Log("I'm triggering!");
 		if (collider.tag == "Player") {
 			Debug.Log("Player Dies");
 		}

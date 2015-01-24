@@ -24,8 +24,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420334}
-  - 65: {fileID: 6520332}
   - 114: {fileID: 11420332}
+  - 135: {fileID: 13504872}
+  - 54: {fileID: 5487024}
   m_Layer: 0
   m_Name: Saw Blade
   m_TagString: Untagged
@@ -58,18 +59,21 @@ Transform:
   - {fileID: 420332}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &6520332
-BoxCollider:
+--- !u!54 &5487024
+Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.12, y: 1.08000004, z: 1}
-  m_Center: {x: .0900000036, y: 0, z: 0}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &11420332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,6 +87,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSpeed: .25
   rotSpeed: -300
+--- !u!135 &13504872
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &21220332
 SpriteRenderer:
   m_ObjectHideFlags: 1
