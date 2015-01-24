@@ -14,7 +14,7 @@ public class SawBlade : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime, Space.World);
-		transform.Translate (new Vector2(xSpeed, 0), Space.World);
+		transform.Translate (new Vector2(xSpeed * Time.deltaTime, 0), Space.World);
 	}
 
 	void OnTriggerEnter(Collider collider) {
