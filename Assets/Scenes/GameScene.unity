@@ -133,6 +133,10 @@ Prefab:
       propertyPath: gravity
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 6514938, guid: 79bb0ea985012544bbf6d949efdb3011, type: 2}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79bb0ea985012544bbf6d949efdb3011, type: 2}
   m_RootGameObject: {fileID: 474273244}
@@ -20385,8 +20389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1422cdb1b57c9064caedad08411a2466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  Player2: {fileID: 0}
+  Player1: {fileID: 474273244}
+  Player2: {fileID: 2015368048}
 --- !u!114 &1744860990
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 	void Update () 
 	{
 		if(entity.isAlive == false) {
-			return;
+			this.gameObject.SetActive(false);
 		}
 
 		if (playerPhysics.movementStopped)

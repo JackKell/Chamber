@@ -17,10 +17,6 @@ public class EntityComponent : MonoBehaviour {
 		if (health <= 0) {
 			kill();
 		}
-
-		if(isAlive == false) {
-			destroy();
-		}
 	}
 
 	public void damage(int damage) {
