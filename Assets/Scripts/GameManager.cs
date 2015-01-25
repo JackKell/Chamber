@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Timer))]
 public class GameManager : MonoBehaviour 
 {
 	static GameManager _instance;
+	private Timer timer;
+	public GameObject Player1;
+	public GameObject Player2;
+
 	
 	static public bool isActive 
 	{
@@ -35,7 +40,7 @@ public class GameManager : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-
+		timer = GetComponent<Timer>();
 	}
 	
 	// Update is called once per frame
@@ -51,6 +56,7 @@ public class GameManager : MonoBehaviour
 	
 	public void LoadGameScene()
 	{
+		timer.isStopped = false;
 		Application.LoadLevel("GameScene");
 	}
 	
