@@ -7,18 +7,27 @@ public class Grid : MonoBehaviour {
 	public List<GameObject> panels = new List<GameObject>();
 	private int width = 18;
 	private int height = 10;
+
+	void Awake() {
+		for(int i = 0; i < width * height; i++) {
+			PanelToggle pt = panels[i].GetComponent<PanelToggle>();
+			pt.Initialize();
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
-		startConfig ();
+		startConfig();
 		toggleCells (false, new Vector2 (9, 1), new Vector2 (9, 2));
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
 	}
 
 	public void startConfig() {
+		Debug.Log("StartConfig");
 		for(int i = 0; i < width * height; i++) {
 			PanelToggle pt = panels[i].GetComponent<PanelToggle>();
 			pt.deactivate(false);

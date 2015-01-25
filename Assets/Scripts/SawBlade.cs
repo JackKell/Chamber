@@ -18,7 +18,6 @@ public class SawBlade : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collider) {
-		Debug.Log("I'm triggering!");
 		if (collider.tag == "Player") {
 			Debug.Log("Player Dies");
 		}

@@ -17,7 +17,7 @@ public class PanelToggle : MonoBehaviour {
 	private float a;
 
 	// Use this for initialization
-	void Start () {
+	public void Initialize () {
 		collider = GetComponent<BoxCollider> ();
 		renderer = GetComponent<SpriteRenderer> ();
 		r = renderer.color.r;
@@ -68,6 +68,7 @@ public class PanelToggle : MonoBehaviour {
 	public void deactivate(bool lerp = true) {
 		isActive = false;
 		targetAlpha = this.alpha;
+		Debug.Log (null == renderer);
 		renderer.sortingOrder = 0;
 
 		if(lerp == false) {
