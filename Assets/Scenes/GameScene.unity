@@ -1284,6 +1284,7 @@ GameObject:
   - 114: {fileID: 418334121}
   - 135: {fileID: 418334120}
   - 54: {fileID: 418334122}
+  - 114: {fileID: 418334124}
   - 114: {fileID: 418334123}
   m_Layer: 0
   m_Name: Saw Blade
@@ -1359,6 +1360,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6702045627e195a49959591d5e15d4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &418334124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11414650, guid: 595889aebfa8c514bbacffd2e96fb2dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 550570502}
+  m_GameObject: {fileID: 418334118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b376d15e27588f74eb9f5850848d9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: Offscreen
 --- !u!1 &432643933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,6 +3465,7 @@ GameObject:
   - 114: {fileID: 959633656}
   - 135: {fileID: 959633655}
   - 54: {fileID: 959633658}
+  - 114: {fileID: 959633659}
   m_Layer: 0
   m_Name: Big Saw Blade
   m_TagString: Untagged
@@ -3514,6 +3529,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &959633659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11414650, guid: 595889aebfa8c514bbacffd2e96fb2dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 154155271}
+  m_GameObject: {fileID: 959633654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b376d15e27588f74eb9f5850848d9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: Offscreen
 --- !u!1 &964313036
 GameObject:
   m_ObjectHideFlags: 0
