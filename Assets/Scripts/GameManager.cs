@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
 	static GameManager _instance;
 	private Timer timer;
-	public GameObject Player1;
-	public GameObject Player2;
+	public GameObject player1;
+	public GameObject player2;
 
 	
 	static public bool isActive 
@@ -46,7 +46,43 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-	
+		player1 = GameObject.Find ("Player 1");
+		player2 = GameObject.Find ("Player 2");
+		
+		/*
+		if (player1 != null)
+		{
+			entity1 = player1.GetComponent<EntityComponent>();
+		}
+		
+		if (player2 != null)
+		{
+			entity2 = player2.GetComponent<EntityComponent>();
+		}
+		
+		if (entity1 != null && entity2 != null)
+		{
+			if(!entity1.isAlive && !entity2.isAlive) 
+			{
+				timer.End();
+				LoadGameOverScene();
+			}
+		}
+		*/
+		if (player1 != null && player2 != null)
+		{
+			EntityComponent entity1, entity2;
+			entity1 = player1.GetComponent<EntityComponent>();
+			entity2 = player2.GetComponent<EntityComponent>();
+			Debug.Log("E1: " + entity1.isAlive);
+			Debug.Log("E2: " + entity1.isAlive);
+			if(!entity1.isAlive && !entity2.isAlive) 
+			{
+				Debug.Log("Both Players Are Dead");
+				timer.End();
+				LoadGameOverScene();
+			}
+		}
 	}
 	
 	public void LoadTitleScene()
