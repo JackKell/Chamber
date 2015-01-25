@@ -11214,11 +11214,4 @@ AnimationClip:
     path: c_jeans/c_belly/c_mid/c_torso/c_head/c_veins
     classID: 4
     script: {fileID: 0}
-  m_Events:
-  - time: 0
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

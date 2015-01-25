@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 	
 	public void LoadGameScene()
 	{
-		timer.isStopped = false;
+		timer.End();
 		Application.LoadLevel("GameScene");
 	}
 	

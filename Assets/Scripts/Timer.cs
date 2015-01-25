@@ -20,12 +20,12 @@ public class Timer : MonoBehaviour {
 		}
 	}
 	
-	public void Start()
+	public void Begin()
 	{
 		isRunning = true;
 	}
 	
-	public void Stop()
+	public void End()
 	{
 		isRunning = false;
 	}

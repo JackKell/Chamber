@@ -17760,6 +17760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1422cdb1b57c9064caedad08411a2466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
 --- !u!4 &1532906584
 Transform:
   m_ObjectHideFlags: 0
@@ -20383,6 +20385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1422cdb1b57c9064caedad08411a2466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
 --- !u!114 &1744860990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20394,7 +20398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c710f5af5be3b45a8babad6062153a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStopped: 1
+  elaspedTime: 0
 --- !u!4 &1744860991
 Transform:
   m_ObjectHideFlags: 0
@@ -25365,7 +25369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c710f5af5be3b45a8babad6062153a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStopped: 0
+  elaspedTime: 0
 --- !u!4 &2074494936
 Transform:
   m_ObjectHideFlags: 0
