@@ -46,6 +46,16 @@ public class GameManager : MonoBehaviour
 	
 	public void LoadTitleScene()
 	{
+		Application.LoadLevel("TitleScene");
+	}
 	
+	public void LoadMainGame()
+	{
+		Application.LoadLevel("TitleScene");
+	}
+	
+	public void LoadCreditsScene()
+	{
+		Application.LoadLevel("CreditsScene");
 	}
 }
