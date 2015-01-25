@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 479958}
   - 212: {fileID: 21279958}
   - 65: {fileID: 6579958}
+  - 114: {fileID: 11453744}
   m_Layer: 8
   m_Name: Panel
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.8099995, y: -2.67000008, z: 9.02000046}
+  m_LocalPosition: {x: 16.8099995, y: -2.67000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,8 +40,22 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.27999997, y: 1.27999997, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11453744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3080ff6135fef5b40a34fbc93583caf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 1
+  alpha: .5
+  delta: .200000003
 --- !u!212 &21279958
 SpriteRenderer:
   m_ObjectHideFlags: 1

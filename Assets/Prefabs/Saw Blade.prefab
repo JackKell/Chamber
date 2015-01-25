@@ -26,11 +26,10 @@ GameObject:
   - 4: {fileID: 420334}
   - 114: {fileID: 11420332}
   - 135: {fileID: 13504872}
-  - 54: {fileID: 5487024}
   - 114: {fileID: 11414650}
   m_Layer: 0
   m_Name: Saw Blade
-  m_TagString: Untagged
+  m_TagString: Deadly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +42,7 @@ Transform:
   m_GameObject: {fileID: 120332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .200000003, y: .200000003, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420334}
   m_RootOrder: 0
@@ -60,21 +59,6 @@ Transform:
   - {fileID: 420332}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &5487024
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120334}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &11414650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +116,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c898b860c3a7e1546801652e1cefd692, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e50fbff33c534cb4c8a212e492e74ea2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
