@@ -18,7 +18,7 @@ public class Grid : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		startConfig();
-		toggleCells (false, new Vector2 (9, 1), new Vector2 (9, 2));
+		toggleCells (false, new Vector2 (9, 7), new Vector2 (9, 8), new Vector2 (9, 9), new Vector2 (9, 10));
 	}
 
 	// Update is called once per frame
