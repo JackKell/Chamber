@@ -83,6 +83,22 @@ public class GameManager : MonoBehaviour
 				LoadGameOverScene();
 			}
 		}
+		
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			LoadTitleScene();
+		}
+		
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			LoadTitleScene();
+			LoadGameScene();
+		}
+		
+		if (Input.GetKeyDown(KeyCode.L))
+		{
+			LoadGameOverScene();
+		}
 	}
 	
 	public void LoadTitleScene()
