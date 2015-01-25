@@ -17,7 +17,13 @@ public class DeathTrigger : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		if(collider.tag == tagName) {
-			Destroy (this.gameObject);
+			EntityComponent entity = GetComponent<EntityComponent>();
+			if(entity == null) {
+				Destroy (this.gameObject);
+			}
+			else {
+				entity.isAlive = false;
+			}
 		}
 	}
 }

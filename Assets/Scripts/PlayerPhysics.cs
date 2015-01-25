@@ -89,7 +89,6 @@ public class PlayerPhysics : MonoBehaviour {
 		}
 		
 		Vector2 finalTransform = new Vector2(deltaX, deltaY);
-		
-		transform.Translate(finalTransform);
+		transform.Translate(finalTransform, Space.World);
 	}
 }
